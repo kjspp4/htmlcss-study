@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html5 form</title>
+</head>
+<body>
+  <form action="#" method="post" novalidate>
+    <fieldset > 
+      <legend>html5 from</legend>
+      <p>
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name"  placeholder="이름" required="required" autocomplete="off">
+
+      </p>
+      <p>
+        <label for="useremil">이메일</label>
+        <input type="email" id="useremil" name="useremil" placeholder="이메일" autofocus>
+      </p>
+      <p>
+        <label for="userurl">웹사이트</label>
+        <input type="url" id="userurl" name="userurl">
+      </p>
+      <p>
+        <lable for="order_qty">주문수량  </lable>
+        <input type="number" name="order_qty" id="order_qty" min=1 max=20 disabled>
+        <span>개</span>
+      </p>
+
+      <p>
+        <lable for="userrange">길이  </lable>
+        <input type="range" name="userrange" id="userrange" min=0 max=100 step="10">
+      </p>
+      <p>
+        <lable for="userdate">제출</lable>
+        <input type="date" id="userdate" name ="userdate" min="2020-10-01" max="2020-10-31">
+      </p>
+      <p>
+        <label for="color">색상선택</label>
+        <input type="color" id="color" name ="color">
+      </p>
+      <p>
+        <label for="user_tel">연락처</label>
+        <input type="tel" id="user_tel" name="user_tel">
+      </p>
+
+    </fieldset>
+    <button type="submit">전송</button>
+  </form>
+
+</body>
+</html>
