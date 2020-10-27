@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodels</title>
+    <style>
+        /* 스타일 초기화..  */
+         *{
+            margin:0;
+            padding: 0;
+        } 
+
+        /* top bottom right  left 
+            padding:100px; // top 
+            padding:100px 50px; // top bottom | right left
+            padding:100px 50px; 10px; // top | right left | bottom
+            padding:100px 50px; 10px 0; // top | right| bottom | left
+
+            border-style: solid dashed  dotted
+        */
+      .box{
+           display: block; 
+          margin: 20px;
+          padding:100px 50px 10px; 
+          /* padding-left: 20px; */
+          border-bottom: 5px solid black;
+          background-color: lime;
+          border-style: solid dashed  dotted;
+          border: 5px solid black;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque natus odit itaque doloremque deleniti laboriosam consequuntur quae exercitationem culpa, architecto officia ipsum molestias repellat impedit. Aut corporis iusto magni quidem.</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque natus odit itaque doloremque deleniti laboriosam consequuntur quae exercitationem culpa, architecto officia ipsum molestias repellat impedit. Aut corporis iusto magni quidem.</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque natus odit itaque doloremque deleniti laboriosam consequuntur quae exercitationem culpa, architecto officia ipsum molestias repellat impedit. Aut corporis iusto magni quidem.</p>
+    </div>
+
+    <span class="box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque natus odit itaque doloremque deleniti laboriosam consequuntur quae exercitationem culpa, architecto officia ipsum molestias repellat impedit. Aut corporis iusto magni quidem.</p>
+    </span>
+
+</body>
+</html>

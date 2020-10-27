@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, p{
+            text-decoration: underline;
+        }
+
+        body{
+            font-size: 12px;
+        }
+
+         .lead{
+            color: green;
+        }
+
+        #lead{
+            color: indianred;
+        }
+        
+        /* 자손 선택자.. */
+        #header h1+p{ 
+            border: 3px solid black;
+        }
+
+        #header em{
+            color: brown;
+        }
+
+        .list li  {
+            background-color: lightpink;
+        }
+
+        /* a 속성에 title 만 있는거 */
+        a[title]{
+            background-color: purple;
+            color: white;
+        }
+        /*  시작 부분찾는거..  */
+        a[href ^='http://']{
+            background-color: black;
+            color: yellow;
+        }
+
+        /* 끝부분 찾는거. . */
+        a[href $='.pdf']{
+            background-color:yellow;
+        }
+
+        li[title~='sam']{
+            background-color: violet;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <div id="header">
+        <h1>css <em>selector</em> </h1>
+        <p>header p</p>
+        <p>header p1</p>
+    </div>
+    <div id="content">
+        <p id="lead">Lorem ipsum dolor sit amet, </p>
+    
+        <p class="lead">Lorem ipsum dolor sit amet, 
+           consectetur adipisicing elit. 
+           Nihil distinctio consequatur, 
+           veniam at doloremque exercitationem 
+           totam inventore quia iste dolorum molestiae 
+           laboriosam reprehenderit 
+           tenetur ut sed nobis culpa similique? Hic.
+        </p>
+    
+        <p class="lead">Lorem ipsum dolor sit amet, </p>
+        <ol class="list">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li title="sam">Lorem ipsum dolor sit amet</li>
+        </ol>
+
+        <ul>
+            <li><a href="daum.net">daum</a></li>
+            <li><a href="naver.com">naver</a></li>
+            <li><a href ="mailto:kkk.co.kr" title="help">help</a></li>
+            <li><a href="file/download.pdf">download</a></li>
+           
+        </ul>
+    </div>
+</div>
+   
+
+</body>
+</html>

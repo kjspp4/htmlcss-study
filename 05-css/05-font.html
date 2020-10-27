@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font /text</title>
+    <style>
+        /* serif 명조  ,  */
+        body{
+            /* font-family: '돋움', dotum, Arial, Helvetica, sans-serif; */
+            font-family: 'Malgun Gothic', Helvetica, sans-serif;
+            font-size:12px;
+        }
+        h1{
+            font-size: 2.4em;
+            text-transform: uppercase;
+        }
+
+        /* 줄간격  양쪽 정렬*/
+        /* left | center | right | justify */
+        /* text-indent 들여쓰기 */
+        .text{
+            text-indent: 1em;
+            text-align: center;
+            line-height: 2.6em;
+            white-space: nowrap;
+        }
+
+        h2{
+            font-variant: small-caps;
+            text-decoration: line-through;
+            /*  underline | overline | */
+        }
+        address{
+            font-family: oblique;
+        }
+
+        .lead{
+            font-size: 2em;
+           word-spacing: 1em;
+            font-weight: bold;
+            /* bold  bolder  | 600 |700 |800 |900 */
+        }
+
+        h1 small{
+            background-color: hotpink;
+            font-size: .5em;
+            vertical-align: baseline;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>style example <small>small</small> </h1>
+        <h2>Style Example (font-variant)</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, doloremque tempora atque maxime rerum rem quasi laudantium corporis, fuga debitis sapiente minus laboriosam dignissimos asperiores quas odio. Nulla, provident pariatur.</p>
+
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia veniam inventore ratione incidunt quod sint ullam repellat ad ut. Quas sequi eaque delectus! Fuga, molestias obcaecati amet modi quia officia.</p>
+        <p>Lorem ipsum dolor
+             sit amet consectetur adipisicing elit. 
+             Vero inventore vel consequatur. 
+             Numquam praesentium repellat saepe optio 
+             sed nesciunt debitis, illum dolorem consequatur,
+             est dolorum quaerat amet totam laboriosam odio.</p>
+
+        <address> add: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis autem quaerat libero voluptates quisquam nemo quod vero culpa voluptatem esse explicabo deleniti, ullam laborum, aliquid eum, nihil neque laudantium odio!</address>
+    </div>
+</body>
+</html>

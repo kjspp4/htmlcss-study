@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        color:#333
+    }
+
+  
+    .lead::first-line{
+        background-color: lime;
+    }
+
+    .lead::first-letter{
+        font-size:5em;
+    }
+
+    h1::before{
+        content: 'before area';
+    }
+    h1::after{
+        content:'after area';
+        color: red;
+    }
+
+        /* a:link{
+            color: green;
+            text-decoration: underline;
+        }
+        a:visited{
+            color:gray;
+            text-decoration: underline;
+        }
+
+        a:hover{
+            color:red;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: orange;
+            text-decoration: underline;
+        }
+
+        a:focus{
+            background: red;
+        } */
+
+        div{background-color: lime;} /* 우선순위 1 */
+        .sample{background-color: gray;} /* 10*/
+        #sample{background-color: gray;} /* 100 */
+        /* inline 이 가장 높음 1000 */
+
+        /* 우선순위가 가장높음..  */
+        div{background-color: red !important;} 
+
+    </style>
+</head>
+<body>
+   <h1>css selector</h1> 
+   <p class="lead">
+       sdfsdffdsf
+        <a href="naver"> naver  </a>
+        <a href=""> tttt  </a>
+        <a href=""> kkbbbbkkkkk  </a>
+
+   </p>
+
+   <div class="sample">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, fugit, itaque at nostrum iste laborum quisquam doloremque veniam consequatur facilis blanditiis molestias error animi reiciendis porro facere repellendus ipsam rerum!
+   </div>
+</body>
+</html>

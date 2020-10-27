@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+      table.tbl{
+          width: 800px;
+          table-layout: fixed;
+          border-collapse: collapse;
+      }
+
+      .tbl td, .tbl th{
+        border: 1px solid steelblue;
+      }
+
+      .tbl caption{
+          caption-side: bottom;
+      }
+
+  </style>
+
+</head>
+<body>
+  <table class="tbl"> 
+    <caption>table caption</caption>
+    <colgroup>
+      <col width="25%">
+      <col width="25%">
+      <col width="25%">
+      <col>
+    </colgroup>
+     <thead>
+       <tr>
+         <!-- scope= col | row -->
+         <th scope="col">table header cell </th>
+         <th scope="col">table header cell</th>
+         <th scope="col">table header cell</th>
+         <th scope="col">table header cell</th>
+       </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <td rowspan="3">table data cell</td>
+        <td>table data cell</td>
+        <td>table data cell</td>
+        <td>table data cell</td>
+      </tr>
+      <tr>
+        
+        <td>table data cell</td>
+        <td>table data cell</td>
+        <td>table data cell</td>
+      </tr>
+      <tr>
+        
+        <td>table data cell</td>
+        <td>table data cell</td>
+        <td>table data cell</td>
+      </tr>
+     </tbody>
+     <tfoot>
+        <tr>
+          <th scope="row">result</th>
+          <td colspan="3">....</td>
+        </tr> 
+     </tfoot>
+  </table>
+</body>
+</html>
